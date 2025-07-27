@@ -38,17 +38,6 @@ section {
   margin: 0 auto;
 }
 
-.projects {
-  display: grid;
-  gap: 1.5rem;
-}
-
-@media (min-width:700px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 footer {
   text-align: center;
   padding: 2rem 1rem;

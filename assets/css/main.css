@@ -55,24 +55,6 @@ footer {
   font-size: .875rem;
 }
 
-/* add dark-mode or additional utilities later */
-
-/* === layout for card grids === */
-.highlight-cards {
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-}
-
-/* === card tweaks === */
-
-.card a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.card a:hover h3 {
-  text-decoration: underline;
-}
-
 /* === colour palette reminiscent of Steam === */
 :root {
   --bg: #1b2838;
@@ -129,12 +111,6 @@ footer {
   gap: 1.25rem;
   margin-top: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-}
-
-.showcase-cards {
-  grid-auto-flow: column;
-  overflow-x: auto;
-  padding-bottom: .5rem;
 }
 
 .section-title {

@@ -26,7 +26,7 @@ title: Home
 {% if highlights.size > 0 %}
 <section class="highlight">
   <h2 class="section-title">Showcase</h2>
-  <div class="cards showcase-cards">
+  <div class="cards">
     {% for post in highlights limit:4 %}
       {% include card.html post=post compact=false %}
     {% endfor %}

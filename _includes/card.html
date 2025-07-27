@@ -4,12 +4,12 @@
     {%- if include.post.image -%}
       <img src="{{ include.post.image | relative_url }}" alt="{{ include.post.title }}">
     {%- endif -%}
-  </a>
   <div class="card-content">
-    <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+    <h3>{{ include.post.title }}</h3>
     <p class="meta">{{ include.post.date | date: "%b %e, %Y" }}</p>
     {%- if include.post.excerpt and c == false -%}
       <p>{{ include.post.excerpt | strip_html | truncate: 120 }}</p>
     {%- endif -%}
   </div>
+  </a>
 </article>

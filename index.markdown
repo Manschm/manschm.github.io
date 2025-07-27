@@ -6,9 +6,8 @@ layout: default     # use your custom layout, not the theme’s “home”
 title: Home
 ---
 
-<!-- ███  HERO / PROFILE  ███ -->
-<header class="profile-hero">
-  <img class="avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.title }}">
+<!-- #### PROFILE #### -->
+<header class="profile">
   <div class="intro">
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
@@ -23,7 +22,7 @@ title: Home
 {% assign highlights = site.posts | where_exp:'p','p.highlight == true' | sort:'date' | reverse %}
 {% assign recent     = site.posts | where_exp:'p','p.highlight != true' | sort:'date' | reverse %}
 
-<!-- ███  SHOWCASE  ███ -->
+<!-- #### SHOWCASE #### -->
 {% if highlights.size > 0 %}
 <section class="highlight">
   <h2 class="section-title">Showcase</h2>
@@ -35,7 +34,7 @@ title: Home
 </section>
 {% endif %}
 
-<!-- ███  MOST-RECENT  ███ -->
+<!-- #### MOST-RECENT #### -->
 {% if recent.size > 0 %}
 <section class="recent">
   <h2 class="section-title">Recent Posts</h2>
